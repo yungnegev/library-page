@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <div class="library">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="add-btn" id="add-book">
+                <span class="material-symbols-sharp">add</span>
+                 <p>Add book</p>
+            </div>
+            <h1>Lib<span>Log</span></h1>
+            <div class="profile">
+                <div class="info">
+                    <p>Hey, <b>Yung</b></p>
+                    <small>Admin</small>
+                </div>
+                <div class="profile-photo">
+                    <img src="./images/user.jpg">
+                </div>
+            </div>
+        </div>
+        <!-- Main grid -->
+        <main class="main-grid">
+            <div class="card">
+
+            </div>
+        </main>
+        <!-- Form overlay -->
+        <div class="form-container">
+            <div class="form-head">
+                <h2>About</h2>
+                <button id="close-overlay">
+                    <span class="material-symbols-sharp">close</span>
+                </button>
+            </div>
+            <form id="book-form" action="#">
+                <div class="label-container">
+                    <label for="title-field">TITLE</label>
+                    <input type="text" name="title" id="title-field" required>
+                </div>
+                <div class="label-container">
+                    <label for="author-field">AUTHOR</label>
+                    <input type="text" name="author" id="author-field" required>
+                </div>
+                <div class="label-container">
+                    <label for="pages-field">PAGES</label>
+                    <input type="number" name="pages" id="pages-field">
+                </div>
+                <div class="submit-btn-container">
+                    <button type="submit" id="submit-btn">
+                        <span class="material-symbols-sharp">add</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>

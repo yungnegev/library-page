@@ -1,0 +1,240 @@
+/* Fonts  */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+/* Material icons cdn */
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+.material-symbols-sharp {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
+
+/* Variables */
+:root{
+    --color-background: #121212;
+    --color-elevated: #212121;
+    --color-primary: #BB86FC;
+    --box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.4);
+    --color-text: #f6f6f9;
+    --color-muted: gray;
+    --color-error: #CF6679;
+}
+
+/* General styles */
+*{
+    margin: 0;
+    padding: 0;
+    appearance: none;
+}
+body{
+    background: var(--color-background);
+    color: var(--color-text);
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1{
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+/* Main container */
+.library{
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+}
+
+
+/* top bar */
+.top-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+    box-shadow: var(--box-shadow);
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.top-bar > h1 span{
+    color: var(--color-primary);
+}
+
+.profile-photo > img{
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+}
+
+.profile{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.info small{ 
+    color: var(--color-muted);
+}
+
+.add-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    background: var(--color-primary);
+    color: var(--color-background);
+    padding: 0.8rem;
+    padding-right: 1.6rem;
+    border-radius: 1.5rem;
+    transition: all 300ms ease;
+}
+
+.add-btn:hover{
+    cursor: pointer;
+    color: var(--color-text);
+}
+
+
+/* Overlay */
+
+.form-container{
+    display: none;
+    position: absolute;
+    width: 450px;
+    height: 600px;
+    background: var(--color-elevated);
+    border-radius: 1.6rem;
+    top: 30%;
+    right: 50%;
+    transform: translate(50%, 0%);
+    box-shadow: var(--box-shadow);
+    padding: 1rem;
+    box-sizing: border-box;
+    transition: all 300ms ease;
+}
+
+.form-container:hover{
+    box-shadow: none;
+}
+
+.form-container .form-head{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem;
+}
+.form-head h2{
+    font-weight: 600;
+    margin-left: 1rem;
+}
+
+#close-overlay{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--color-text);
+    margin-right: 0.4rem;
+    transition: all 300ms ease;
+}
+
+#close-overlay:hover{
+    color: var(--color-error);
+}
+
+form{
+    padding: 1.6rem;
+}
+
+input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid var(--color-primary);
+    border-radius: 0.6rem;
+    background: var(--color-elevated);
+    color: var(--color-text);
+    font-size: 1rem;    
+}
+
+input:focus {
+    outline: none;
+    scale: 1.05;
+}
+label{
+    color: var(--color-muted);
+    letter-spacing: 2px;
+}
+.submit-btn-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5.6rem;
+}
+#submit-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    appearance: none;
+    background: var(--color-primary);
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    border: none;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+#submit-btn:hover{
+    color: var(--color-text);
+}
+#submit-btn span{
+    font-size: 2.2rem;
+}
+
+main{
+    display: grid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+    h1{
+        display: none;
+    }
+}
